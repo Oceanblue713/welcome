@@ -1,0 +1,22 @@
+.About {
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.mr-auto {
+  justify-content: right;
+}
+
+.bio {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.headshot {
+  text-align: center;
+}
+
+.about-hr {
+  size: 10px;
+  style: solid;
+}

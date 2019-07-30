@@ -1,0 +1,43 @@
+.contact-form {
+    height: 500px;
+}
+.contact-submit-message {
+    color: green;
+}
+
+.email-message-error {
+    color: red;
+}
+
+.message-message-error {
+    color: red;
+}
+
+.message-send-button {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.name-input {
+    width: 500px;
+}
+
+.email-input{
+    width: 500px;
+}
+
+.social-icon {
+    display: inline-block;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+}
+
+.contact-h2tag {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
