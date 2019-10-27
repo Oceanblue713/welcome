@@ -1,4 +1,44 @@
-.like-card {
-    display: inline-block;
-    margin: 30px;
+.like-top {
+  display: inline-block;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.like-modal {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.like-modal-box {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  left: 0;
+  width: 640px;
+  max-width: 100%;
+  height: 220px;
+  max-height: 100%;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: auto;
+  background-color: aliceblue;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.like-modal-box p{
+  margin-bottom: 5px;
+}
+
+.like-close-button {
+  color: skyblue;
+  border-style: none;
+  background-color: aliceblue;
+  margin-bottom: 10px;
 }

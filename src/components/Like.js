@@ -3,46 +3,52 @@ import Figure from 'react-bootstrap/Figure';
 import FigureImage from 'react-bootstrap/FigureImage';
 import './Like.css';
 import Fade from 'react-reveal/Fade';
+import Col from 'react-bootstrap/Col'
 
 class Like extends Component {
   constructor(props){
     super(props);
-    this.state = {isModalOpen: false}
+    this.state = { show: false};
   }
 
   handleModalOpen() {
-    this.setState({isModalOpen: true})
+    this.setState({ show: true});
   }
 
   handleModalClose() {
-    this.setState({isModalOpen: false})
+    this.setState({ show: false });
   }
-
+  
   render() {
     let modal = '';
-    if(this.state.isModalOpen === true){
+    if(this.state.show){
       modal = (
+       
         <div className="like-modal">
-          <h5>{this.props.likeName}</h5>
-          <p>{this.props.likeDesc}</p>
-          <button onClick={() => {this.handleModalClose()}}>Close</button>
+          <Fade>
+          <div className="like-modal-box">
+            <h5>{this.props.likeName}</h5>
+            <p>{this.props.likeDesc}</p>
+            <button className="like-close-button" 
+                    onClick={() =>{this.handleModalClose()}}>Close</button>
+          </div>  
+          </Fade> 
         </div>
-      )
-    }
+      );
+    } 
 
     return(
-      <div className="like-card"
-           onClick={() => {this.handleModalOpen()}}>
-        <Fade>
+      <div className="like-top">
+        <div onClick={() => {this.handleModalOpen()}}>     
           <Figure>
             <FigureImage src={this.props.image}
                         width="220px"
                         height="220px" roundedCircle/>
           </Figure>
           <h5>{this.props.likeName}</h5>
-        </Fade> 
+        </div>   
+          {modal}
       </div>
-     
     );
   }
 }

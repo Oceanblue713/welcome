@@ -15,7 +15,7 @@ class App extends Component {
       {
         skillName: 'Ruby',
         image: require('./components/images/ruby.jpg'),
-        introduction: 'My first program language.'
+        id: 1
       },
       {
         skillName: 'Javascript',
@@ -51,15 +51,17 @@ class App extends Component {
       {
         likeName: 'Cooking',
         image: require('./components/images/cooking.jpg'),
-        likeDesc: "Cooking makes me to be able to control my health, and my body shape, also can focus on the"
+        likeDesc: "Cooking helps me stay healthy,  also cooking helps me relax and relieve stress. Food is important for your daily life because what you are what you eat."
       },
       {
         likeName: 'Running',
-        image: require('./components/images/Run.JPG')
+        image: require('./components/images/Run2.jpg'),
+        likeDesc: "I really hated running 8 years ago. I didn't understand why people like running, but I started running for my health. I attend local races once a month. I prefer running outside, because I can feel experience nature and my environment. It feels really good. If you would like to start jogging don't worry about speed. The a slow speed is good, increase your speed day by day."
       },
       {
         likeName: 'Traveling',
-        image: require('./components/images/Beach.JPG')
+        image: require('./components/images/Beach.JPG'),
+        likeDesc: "I am originaly from Japan. I have traveled to a lot of places, and would like to go to new places where I have never been. I like how each country or city has their own culture, I enjoy seeing things I have never seen before. I like walking around town taking pictures. I like to see the pictures after the trip is finished. "
       },
     ]
 
@@ -79,7 +81,7 @@ class App extends Component {
           <div className='skill-bord'>
             {skillList.map((skillItem) => {
               return(
-                <Skill 
+                <Skill key={skillItem.id}
                   skillName={skillItem.skillName}
                   image={skillItem.image}
                   introduction={skillItem.introduction} />
@@ -92,15 +94,15 @@ class App extends Component {
             I also like running. I run almost everyday to stay healthy and achieve a good mental balance. I like to attend local races for fun and explore the local area.<br />
             Part of my travels also includes exploring the local area. I like visiting local cafes, restaurants and public spaces, and learn about the lives of the people in my community.
           </p>
-          <div class="like-raw">
+          <div className="like-raw">
           {likeList.map((likeItem) => {
             return(
               <Like likeName={likeItem.likeName}
-                    image={likeItem.image} />
+                    image={likeItem.image} 
+                    likeDesc={likeItem.likeDesc}/>
             )
           })}
           </div>
-          <div id="contact"></div>
           <Contact />
           <Link />
         </div>

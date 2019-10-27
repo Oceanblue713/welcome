@@ -23,8 +23,7 @@ class Skill extends Component {
       )
     }
     return(
-        <div className="skill-card"
-             onClick={() => console.log("clicked")}>
+        <div className="skill-card">
           <Fade>
           <Figure>
             <Figure.Image 

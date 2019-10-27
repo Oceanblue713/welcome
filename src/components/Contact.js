@@ -57,7 +57,7 @@ class Contact extends React.Component {
           )
         }
 
-        let contactForm;
+        let contactForm = '';
         if(this.state.isSubmitted){
           contactForm = (
               <div className="contact-submit-message">
@@ -92,7 +92,7 @@ class Contact extends React.Component {
         }
 
         return(
-          <div className="contact">
+          <div className="contact" id="contact">
             <h2 className="contact-h2tag">Contact Me</h2>
             <p>Please don't hesitate to contact me. You can also learn more about my programs from the Github link below and my career history from my LinkedIn profile.<br />
               If you would like to see my resume, please send a request message from the link below.<br />
