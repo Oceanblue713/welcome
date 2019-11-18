@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Nav, NavDropdown } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
+import gitHubLogo from './images/GitHub.png';
 import './Navigation.css';
 
 class Navi extends Component {
@@ -15,6 +16,9 @@ class Navi extends Component {
                 <Nav.Link href="#skills">Skills</Nav.Link>
                 <Nav.Link href="#like">What I like</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link href="https://github.com/Oceanblue713" target="_blank">
+                  GitHub <img src= {gitHubLogo} width="25" height="25" alt="github"/>
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

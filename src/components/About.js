@@ -26,11 +26,11 @@ class About extends Component {
           </Col>
           <Col xs={12} md={6}>
             <Fade>
-              <p className>Hi, I'm Anri. I am an experienced automation test engineer, who is passionate for automated testing.<br />
-              I have released a couple of rails and react applications, and love working on my web app in my free time. I also used react to create and update this page myself.<br />
-              I like cooking, traveling and running in my free time. My hobbies give me inspiration, and help me relieve stress.<br />
-              My dream is to share what I enjoy with other like minded people around the world.<br />
-              If you would like to know more about me, please explore this page.<br />
+              <p className>Hi, I'm Anri. I am an experienced automation test engineer, who is passionate for automated testing.
+              I have released a couple of rails and react applications, and love working on my web app in my free time. I also used react to create and update this page myself.
+              I like cooking, traveling and running in my free time. My hobbies give me inspiration, and help me relieve stress.
+              My dream is to share what I enjoy with other like minded people around the world.
+              If you would like to know more about me, please explore this page.
               Thank you very much for visiting!
               </p>
             </Fade>
