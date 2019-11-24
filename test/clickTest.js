@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 const assert = require('assert');
-const expect = require('chai').expect;
 
 describe('Test Anri Liy homepage', () => {
   beforeEach(() => {
@@ -53,3 +52,19 @@ describe('Website contents', () => {
     expect(contactMe.getTagName()).to.equal('h2');
   });
 });
+
+describe('What I like modals', () => {
+  it('click cooking image', () => {
+    $('.like-raw > div:nth-of-type(1) .figure-img.img-fluid.rounded-circle').click();
+    const modal = $('.like-modal-box.react-reveal')
+    modal.waitForExist();
+    expect(modal.isDisplayed()).to.equal(true);
+    $('.like-close-button').click();
+    browser.pause(2000);
+    expect(modal.isDisplayed()).to.equal(false);
+  });
+});
+
+describe('Contact Me Links', () => {
+  
+})

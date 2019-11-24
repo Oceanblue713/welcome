@@ -167,6 +167,8 @@ exports.config = {
      */
     before: function (capabilities, specs) {
         require('@babel/register')
+        // eslint-disable-next-line no-native-reassign
+        expect = require('chai').expect;
     },
     /**
      * Runs before a WebdriverIO command gets executed.
