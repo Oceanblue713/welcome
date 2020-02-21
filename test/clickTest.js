@@ -81,8 +81,21 @@ describe('Website contents', () => {
 });
 
 describe('What I like modals', () => {
+  before(() => {
+    browser.url('./')
+  })
   it('click cooking image', () => {
     $('.like-raw > div:nth-of-type(1) .figure-img.img-fluid.rounded-circle').click();
+    const modal = $('.like-modal-box.react-reveal')
+    modal.waitForExist();
+    expect(modal.isDisplayed()).to.equal(true);
+    $('.like-close-button').click();
+    browser.pause(2000);
+    expect(modal.isDisplayed()).to.equal(false);
+  });
+
+  it('click running image',() => {
+    $('.like-raw .like-top:nth-of-type(2) .rounded-circle').click();
     const modal = $('.like-modal-box.react-reveal')
     modal.waitForExist();
     expect(modal.isDisplayed()).to.equal(true);
