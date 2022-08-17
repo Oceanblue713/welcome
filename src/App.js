@@ -81,7 +81,7 @@ class App extends Component {
               I started learning programming in 2017. My first programming
               language was Ruby. When I first started, I was surprised to find
               out I could build programs and applications on my laptop. I always
-              thought this took specialized equipment.
+              taught this took specialized equipment.
               <br />
               After Ruby, I learned Javascript and how to make websites more
               aesthetically pleasing. I then got my first tester job after I
