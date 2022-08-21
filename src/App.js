@@ -13,8 +13,9 @@ class App extends Component {
   render() {
     const skillList = [
       {
-        skillName: "Ruby",
-        image: require("./components/images/ruby.jpg"),
+        skillName: "Python",
+        image: require("./components/images/python.png"),
+        link: "https://www.python.org/",
         id: 1,
       },
       {
@@ -22,16 +23,12 @@ class App extends Component {
         image: require("./components/images/js.svg"),
       },
       {
-        skillName: "Automated Test",
+        skillName: "Selenium",
         image: require("./components/images/se.png"),
       },
       {
         skillName: "React",
         image: require("./components/images/React.png"),
-      },
-      {
-        skillName: "RubyonRails",
-        image: require("./components/images/Rails.svg"),
       },
       {
         skillName: "HTML5",
@@ -87,10 +84,9 @@ class App extends Component {
               aesthetically pleasing. I then got my first tester job after I
               learned programming.
               <br />
-              As a tester, I taught myself automation test tools and BDD
-              concepts, since there are no schools for automated testing. When I
-              started I totally could not understand these concepts, but I am
-              learning and can understand and use them right now.
+              {/* As more than 4 years experience, I learned python and
+              Robotframework to run end to end automation test. I also learned
+              to run automation test daily bases to use powershell script */}
             </p>
             <div className="skill-bord">
               {skillList.map((skillItem) => {
