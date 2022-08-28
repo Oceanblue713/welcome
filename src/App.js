@@ -8,41 +8,11 @@ import Link from "./components/Link";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Col from "react-bootstrap/Col";
+const { SkillList } = require("./components/Data/SkillList");
 
 class App extends Component {
   render() {
-    const skillList = [
-      {
-        skillName: "Python",
-        image: require("./components/images/python.png"),
-        link: "https://www.python.org/",
-        id: 1,
-      },
-      {
-        skillName: "Javascript",
-        image: require("./components/images/js.svg"),
-      },
-      {
-        skillName: "Selenium",
-        image: require("./components/images/se.png"),
-      },
-      {
-        skillName: "React",
-        image: require("./components/images/React.png"),
-      },
-      {
-        skillName: "HTML5",
-        image: require("./components/images/html.png"),
-      },
-      {
-        skillName: "CSS3",
-        image: require("./components/images/css3.svg"),
-      },
-      {
-        skillName: "git",
-        image: require("./components/images/git.png"),
-      },
-    ];
+    const skillList = SkillList;
 
     const likeList = [
       {
